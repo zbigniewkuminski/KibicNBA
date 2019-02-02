@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col-md-2" style="background-color:black; height: 250px"></div>
+  <div class="col-md-10" style="background-color:orange; height: 250px">
+    <div class="row">
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger1="matMenuTrigger" (mouseenter)="menuTrigger1.openMenu()"
+          (mouseenter)="menuTrigger.openMenu()" [matMenuTriggerFor]="menu">Menu1</button>
+        <mat-menu #menu="matMenu">
+          <h1>Test</h1>
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger2="matMenuTrigger" (mouseenter)="menuTrigger2.openMenu()"
+          [matMenuTriggerFor]="menu">Menu2</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger3="matMenuTrigger" (mouseenter)="menuTrigger3.openMenu()"
+          [matMenuTriggerFor]="menu">Menu3</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger4="matMenuTrigger" (mouseenter)="menuTrigger4.openMenu()"
+          [matMenuTriggerFor]="menu">Menu4</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger5="matMenuTrigger" (mouseenter)="menuTrigger5.openMenu()"
+          [matMenuTriggerFor]="menu">Menu5</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger6="matMenuTrigger" (mouseenter)="menuTrigger6.openMenu()"
+          [matMenuTriggerFor]="menu">Menu6</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+      <div class="col-md-1 menu">
+        <button class="menu-button" mat-button #menuTrigger7="matMenuTrigger" (mouseenter)="menuTrigger7.openMenu()"
+          [matMenuTriggerFor]="menu">Menu7</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item class="sub-menu-button">Item 1</button>
+          <button mat-menu-item class="sub-menu-button">Item 2</button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</div>
