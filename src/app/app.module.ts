@@ -8,11 +8,13 @@ import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MainSiteComponent } from './main-site/main-site.component';
+import { PlayerProfileComponent } from './main-site/player-profile/player-profile.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    MainSiteComponent
+    MainSiteComponent,
+    PlayerProfileComponent
   ],
   imports: [
     BrowserModule,
