@@ -9,6 +9,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MainSiteComponent } from './main-site/main-site.component';
 import { PlayerProfileComponent } from './main-site/player-profile/player-profile.component';
+import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { PlayerProfileComponent } from './main-site/player-profile/player-profil
     BrowserAnimationsModule,
     MatRadioModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

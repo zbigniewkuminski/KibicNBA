@@ -2,7 +2,7 @@
   <div class="col-md-1"><img style='height: 100%; width: 100%; object-fit: contain' src="../../../images/menu/nbaLogo.png"></div>
   <div class="col-md-11 menu-background">
     <div class="row menu-buttons">
-      <button class="menu-button" mat-button>Strona główna</button>
+      <button class="menu-button" mat-button [routerLink]="['strona-glowna']">Strona główna</button>
       <button class="menu-button" mat-button #menuTrigger2="matMenuTrigger" (mouseenter)="menuTrigger2.toggleMenu()"
         [matMenuTriggerFor]="menu">Drużyny</button>
       <mat-menu #menu="matMenu" overlapTrigger="false">
@@ -11,7 +11,7 @@
           <button mat-menu-item class="sub-menu-button">Konferencja Wschodnia</button>
         </span>
       </mat-menu>
-      <button class="menu-button" mat-button>Zawodnicy</button>
+      <button class="menu-button" mat-button [routerLink]="['zawodnicy']">Zawodnicy</button>
     </div>
   </div>
 </div>
