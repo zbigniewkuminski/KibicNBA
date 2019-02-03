@@ -34,7 +34,11 @@ export enum Teams {
 export enum Positions {
     PG =  'PG',
     SG = 'SG',
+    PGSG = 'PG/SG',
+    SGSF = 'SG/SF',
     SF = 'SF',
     PF = 'PF',
-    C = 'C'
+    SFPF = 'SF/PF',
+    C = 'C',
+    PFC = 'PF/C'
 }

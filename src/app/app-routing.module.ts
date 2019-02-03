@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PlayerProfileComponent } from '../app/main-site/player-profile/player-profile.component'
+import { PlayersComponent } from '../app/main-site/players/players.component'
 import { MainSiteComponent } from './main-site/main-site.component';
 
 const routes: Routes = [
-  { path: 'zawodnicy', component: PlayerProfileComponent },
+  { path: 'zawodnicy', component: PlayersComponent },
   { path: 'strona-glowna', component: MainSiteComponent }
 ]
 

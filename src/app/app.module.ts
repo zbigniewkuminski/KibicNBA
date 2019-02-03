@@ -8,14 +8,17 @@ import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MainSiteComponent } from './main-site/main-site.component';
-import { PlayerProfileComponent } from './main-site/player-profile/player-profile.component';
+import { PlayerProfileComponent } from './main-site/players/player-profile/player-profile.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PlayersComponent } from './main-site/players/players.component';
+import { MatTableModule } from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     MainSiteComponent,
-    PlayerProfileComponent
+    PlayerProfileComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { AppRoutingModule } from './app-routing.module';
     MatRadioModule,
     MatMenuModule,
     MatButtonModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

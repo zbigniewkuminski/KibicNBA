@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <table mat-table name="playersTable" [dataSource]="players" class="mat-elevation-z8 table">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef>Imię</th>
+          <td matt-cell *matCellDef="let player">{{player.name}}</td>
+        </ng-container>
+        <ng-container matColumnDef="secondName">
+          <th mat-header-cell *matHeaderCellDef>Drugie imię</th>
+          <td matt-cell *matCellDef="let player">{{player.secondName}}</td>
+        </ng-container>
+        <ng-container matColumnDef="surname">
+          <th mat-header-cell *matHeaderCellDef>Nazwisko</th>
+          <td matt-cell *matCellDef="let player">{{player.surname}}</td>
+        </ng-container>
+        <ng-container matColumnDef="jerseyNumber">
+          <th mat-header-cell *matHeaderCellDef>Numer koszulki</th>
+          <td matt-cell *matCellDef="let player">{{player.jerseyNumber}}</td>
+        </ng-container>
+        <ng-container matColumnDef="age">
+          <th mat-header-cell *matHeaderCellDef>Wiek</th>
+          <td matt-cell *matCellDef="let player">{{player.age}}</td>
+        </ng-container>
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef>Pozycja</th>
+          <td matt-cell *matCellDef="let player">{{player.position}}</td>
+        </ng-container>
+        <ng-container matColumnDef="team">
+          <th mat-header-cell *matHeaderCellDef>Drużyna</th>
+          <td matt-cell *matCellDef="let player">{{player.team}}</td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</div>

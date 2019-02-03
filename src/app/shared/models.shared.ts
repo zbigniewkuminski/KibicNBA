@@ -9,7 +9,7 @@ export class Player {
     team: Teams;
     photo: string;
     position: Positions;
-    stats: Statistics;
+    // stats: Statistics;
 }
 
 export interface Statistics {
