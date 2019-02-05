@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { Player, Statistics } from 'src/app/shared/models.shared';
 import { Positions, Teams } from 'src/app/shared/enum.shared';
-import { MatTableDataSource, MatSort } from '@angular/material';
-import { DataSource } from '@angular/cdk/table';
+import { MatTableDataSource, MatSort, MatCheckboxChange } from '@angular/material';
 @Component({
   selector: 'app-players',
   templateUrl: './players.component.html',
   styleUrls: ['./players.component.css']
 })
 export class PlayersComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'secondName', 'surname','jerseyNumber','age','position','team'];
+  constDisplayedColumns: string[] = ['name', 'secondName', 'surname', 'jerseyNumber', 'age', 'position', 'team'];
+  displayedColumns: string[] = this.constDisplayedColumns;
+  displayedColumnsTrueFalse: boolean[] = [true, true, true, true, true, true, true];
+
   private players: Player[] = [{
     name: 'Dirk',
     secondName: '',
@@ -37,4 +39,18 @@ export class PlayersComponent implements OnInit {
   ngOnInit() {
   }
 
+  dataSource = new MatTableDataSource(this.players);
+
+  applyFilter(filterValue: string) {
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  private changeDisplayedColumns(index: number): void {
+    this.displayedColumnsTrueFalse[index] = !this.displayedColumnsTrueFalse[index];
+    let test: string[] = [];
+    this.displayedColumnsTrueFalse.forEach((element,index2) => {
+      element ? test.push(this.constDisplayedColumns[index2]) : null;
+    });
+    this.displayedColumns = test;
+  }
 }

@@ -12,6 +12,7 @@ import { PlayerProfileComponent } from './main-site/players/player-profile/playe
 import { AppRoutingModule } from './app-routing.module';
 import { PlayersComponent } from './main-site/players/players.component';
 import { MatTableModule } from '@angular/material';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { MatTableModule } from '@angular/material';
     MatMenuModule,
     MatButtonModule,
     AppRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,30 @@
-<div class="container">
+<div class="container" style="background-color: rgb(241, 241, 241)">
+  <div class="row">
+    <div class="col-md-12 title">
+      ZAWODNICY
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
-      <table mat-table name="playersTable" [dataSource]="players" class="mat-elevation-z8 table">
+      <div class="row">
+        <div class="col-md-4">
+          <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filtruj">
+          </mat-form-field>
+        </div>
+        <div class="col-md-8">
+          <mat-checkbox name="name" class="margin-right" value="name" [checked]="displayedColumnsTrueFalse[0]" (change)="changeDisplayedColumns(0)">Imię</mat-checkbox>
+          <mat-checkbox name="secondName" class="margin-right" value="secondName" [checked]="displayedColumnsTrueFalse[1]"
+            (change)="changeDisplayedColumns(1)">Drugie</mat-checkbox>
+          <mat-checkbox name="surname" class="margin-right" value="surname" [checked]="displayedColumnsTrueFalse[2]" (change)="changeDisplayedColumns(2)">Nazwisko</mat-checkbox>
+          <mat-checkbox name="jerseyNumber" class="margin-right" value="jerseyNumber" [checked]="displayedColumnsTrueFalse[3]"
+            (change)="changeDisplayedColumns(3)">Numer koszulki</mat-checkbox>
+          <mat-checkbox name="age" class="margin-right" value="age" [checked]="displayedColumnsTrueFalse[4]" (change)="changeDisplayedColumns(4)">Wiek</mat-checkbox>
+          <mat-checkbox name="position" class="margin-right" value="position" [checked]="displayedColumnsTrueFalse[5]" (change)="changeDisplayedColumns(5)">Pozycja</mat-checkbox>
+          <mat-checkbox name="team" class="margin-right" value="team" [checked]="displayedColumnsTrueFalse[6]" (change)="changeDisplayedColumns(6)">Drużyna</mat-checkbox>
+        </div>
+      </div>
+      <table mat-table name="playersTable" [dataSource]="dataSource" class="mat-elevation-z8 table">
         <ng-container matColumnDef="name">
           <th mat-header-cell *matHeaderCellDef>Imię</th>
           <td matt-cell *matCellDef="let player">{{player.name}}</td>
