@@ -2,6 +2,10 @@
     width: 100%
 }
 
+.font {
+    font-family: MenuFont;
+}
+
 .title {
     font-family: MenuFont;
     font-size: 25px;
@@ -9,4 +13,28 @@
 
 .margin-right{
     margin-right: 15px; 
+}
+
+.sticky {
+    position: sticky;
+    z-index: 9999;
+}
+
+.sticky .sticky-title {
+    top:0;
+}
+
+.sticky .sticky-table-options{
+    top:30px;
+}
+
+:host /deep/ .mat-header-row .ng-star-inserted {
+    position: sticky;
+    top: 60px;
+    background: white;
+    z-index: 1000000;
+  }
+
+.background{
+    background-color: rgb(241, 241, 241)
 }

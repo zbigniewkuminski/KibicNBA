@@ -1,13 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Player, Statistics } from 'src/app/shared/models.shared';
 import { Positions, Teams } from 'src/app/shared/enum.shared';
-import { MatTableDataSource, MatSort, MatCheckboxChange } from '@angular/material';
+import { MatTableDataSource, MatSort, MatCheckboxChange, MatPaginator } from '@angular/material';
 @Component({
   selector: 'app-players',
   templateUrl: './players.component.html',
   styleUrls: ['./players.component.css']
 })
 export class PlayersComponent implements OnInit {
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  
+  ngOnInit(){
+    this.dataSource.paginator = this.paginator;
+  }
   constDisplayedColumns: string[] = ['name', 'secondName', 'surname', 'jerseyNumber', 'age', 'position', 'team'];
   displayedColumns: string[] = this.constDisplayedColumns;
   displayedColumnsTrueFalse: boolean[] = [true, true, true, true, true, true, true];
@@ -33,11 +39,569 @@ export class PlayersComponent implements OnInit {
     position: Positions.SFPF,
     // stats: Statistics = ,
     team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
+  },
+  {
+    name: 'LeBron',
+    secondName: 'Raymone',
+    surname: 'James',
+    age: '34',
+    jerseyNumber: '46',
+    photo: '',
+    position: Positions.SFPF,
+    // stats: Statistics = ,
+    team: Teams.LAL
   }]
   constructor() { }
-
-  ngOnInit() {
-  }
 
   dataSource = new MatTableDataSource(this.players);
 

@@ -11,8 +11,9 @@ import { MainSiteComponent } from './main-site/main-site.component';
 import { PlayerProfileComponent } from './main-site/players/player-profile/player-profile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PlayersComponent } from './main-site/players/players.component';
-import { MatTableModule } from '@angular/material';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatTableModule, MatPaginatorModule ,  } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTabsModule } from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatButtonModule,
     AppRoutingModule,
     MatTableModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatTabsModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
