@@ -20,16 +20,16 @@
 }
 
 @font-face {
-    font-family: 'MenuFont';
+    font-family: 'AppFont';
     src: url('../../../fonts/hemi-head-426/hemiheadbdit.ttf')
 }
 
 .menu-button {
-    font-family: MenuFont;
+    font-family: AppFont;
     font-size: 30px;
 }
 
 .sub-menu-button {
-    font-family: MenuFont;
+    font-family: AppFont;
     font-size: 15px;
 }

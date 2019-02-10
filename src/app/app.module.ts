@@ -14,6 +14,7 @@ import { PlayersComponent } from './main-site/players/players.component';
 import { MatTableModule, MatPaginatorModule ,  } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTabsModule } from '@angular/material/tabs';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,9 +34,11 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatTableModule,
     MatCheckboxModule,
     MatTabsModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[PlayerProfileComponent]
 })
 export class AppModule { }

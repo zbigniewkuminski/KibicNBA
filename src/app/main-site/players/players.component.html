@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="row .sticky-title background">
+  <div class="row sticky sticky-title background">
     <div class="col-md-12 title">
       ZAWODNICY
     </div>
   </div>
 
-  <div class="row sticky-table-options background">
+  <div class="row sticky sticky-table-options background">
     <div class="col-md-12">
       <div class="row">
         <div class="col-md-3">
@@ -70,7 +70,7 @@
           <td matt-cell *matCellDef="let player">{{player.team}}</td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr class="table-element" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="test(row)"></tr>
       </table>
       <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="20" showFirstLastButtons></mat-paginator>
     </div>

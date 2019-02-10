@@ -1,38 +1,34 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-      PLAYER PHOTO
-    </div>
-    <div class="col-md-3">
       <div class="row">
-        <div class="col-md-12">imie</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">nazwisko</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">wiek</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">druzyna</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">pozycja</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">numer</div>
-      </div>
-    </div>
-    <div class="col-md-2">
-      <div class="row">
-        <div class="col-md-12">pts</div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">ast</div>
-      </div>
-      <div class="row">
-          <div class="col-md-12">reb</div>
+        <div class="col-md-12">
+          <img src="{{player.photo}}"> 
         </div>
+        <div class="col-md-12">
+          <p class="jersey-number-font"><strong>#{{player.jerseyNumber | uppercase}}</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">IMIĘ: <strong>{{player.name | uppercase}}</strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">DRUGIE IMIĘ: <strong>{{player.secondName | uppercase}}</strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">NAZWISKO: <strong>{{player.surname | uppercase}}</strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">WIEK: <strong>{{player.age | uppercase}}</strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">DRUŻYNA: <strong>{{player.team | uppercase}}</strong></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">POZYCJA: <strong>{{player.position | uppercase}}</strong></div>
+      </div>
     </div>
   </div>
 </div>

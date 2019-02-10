@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Player } from 'src/app/shared/models.shared';
 
 @Component({
   selector: 'app-player-profile',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerProfileComponent implements OnInit {
 
+  public player: Player;
   constructor() { }
 
   ngOnInit() {

@@ -3,38 +3,42 @@
 }
 
 .font {
-    font-family: MenuFont;
+    font-family: AppFont;
 }
 
 .title {
-    font-family: MenuFont;
+    font-family: AppFont;
     font-size: 25px;
 }
 
-.margin-right{
-    margin-right: 15px; 
+.margin-right {
+    margin-right: 15px;
 }
 
 .sticky {
     position: sticky;
-    z-index: 9999;
+    z-index: 1;
 }
 
-.sticky .sticky-title {
-    top:0;
+.sticky-title {
+    top: 0;
 }
 
-.sticky .sticky-table-options{
-    top:30px;
+.sticky-table-options {
+    top: 30px;
 }
 
 :host /deep/ .mat-header-row .ng-star-inserted {
     position: sticky;
-    top: 60px;
+    top: 95px;
     background: white;
-    z-index: 1000000;
-  }
+    z-index: 1;
+}
 
-.background{
-    background-color: rgb(241, 241, 241)
+.background {
+    background-color: white
+}
+
+.table-element {
+    cursor: pointer;
 }
