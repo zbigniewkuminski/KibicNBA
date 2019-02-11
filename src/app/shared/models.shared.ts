@@ -1,4 +1,4 @@
-import { Teams, Positions } from "../shared/enum.shared"
+import { TeamAchronim, Positions, Conference, Division } from "../shared/enum.shared"
 
 export class Player {
     name: string;
@@ -6,7 +6,7 @@ export class Player {
     surname: string;
     age: string;
     jerseyNumber: string;
-    team: Teams;
+    team: Team;
     photo: string;
     position: Positions;
     // stats: Statistics;
@@ -21,4 +21,13 @@ export interface Statistics {
     turnovers: string;
     minutes: string;
     fouls: string;
+}
+
+export class Team {
+    name: string;
+    city: string;
+    logo: string;
+    achronim: TeamAchronim;
+    conference: Conference;
+    division: Division;
 }

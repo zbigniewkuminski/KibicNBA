@@ -1,4 +1,4 @@
-export enum Teams {
+export enum TeamAchronim {
     ATL = "Atlanta Hawks",
     BKN = "Brooklyn Nets",
     BOS = "Boston Celtics",
@@ -41,4 +41,18 @@ export enum Positions {
     SFPF = 'SF/PF',
     C = 'C',
     PFC = 'PF/C'
+}
+
+export enum Conference {
+    Western = 'Konferencja Zachodnia ',
+    Eastern = 'Konferencja Wschodnia'
+}
+
+export enum Division {
+    Atlantic = 'Atlantic',
+    Central = 'Central',
+    SouthEast = 'SouthEast',
+    NorthWest = 'NorthWest',
+    Pacific = 'Pacific',
+    SouthWest = 'SouthWest',
 }

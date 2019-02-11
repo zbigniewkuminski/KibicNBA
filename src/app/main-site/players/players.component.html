@@ -67,10 +67,10 @@
         </ng-container>
         <ng-container matColumnDef="team">
           <th mat-header-cell *matHeaderCellDef>Drużyna</th>
-          <td matt-cell *matCellDef="let player">{{player.team}}</td>
+          <td matt-cell *matCellDef="let player">{{player.team.city}} {{player.team.name}}</td>
         </ng-container>
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr class="table-element" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="test(row)"></tr>
+        <tr class="table-element" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="openPlayerProfileModal(row)"></tr>
       </table>
       <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="20" showFirstLastButtons></mat-paginator>
     </div>

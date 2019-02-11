@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Player } from 'src/app/shared/models.shared';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-player-profile',
@@ -9,7 +10,7 @@ import { Player } from 'src/app/shared/models.shared';
 export class PlayerProfileComponent implements OnInit {
 
   public player: Player;
-  constructor() { }
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnInit() {
   }

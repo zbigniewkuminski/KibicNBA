@@ -1,5 +1,10 @@
 
 .jersey-number-font{
     font-family: AppFont;
-    font-size: 35px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.team-logo-background{
+    background-size: cover
 }
