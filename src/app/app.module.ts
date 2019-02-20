@@ -15,13 +15,15 @@ import { MatTableModule, MatPaginatorModule ,  } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
+import { TeamsComponent } from './main-site/teams/teams.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     MainSiteComponent,
     PlayerProfileComponent,
-    PlayersComponent
+    PlayersComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,

@@ -8,12 +8,12 @@
 }
 
 .menu-background {
-    background: rgb(227, 72, 28);
-    background: -moz-linear-gradient(top, rgb(227, 72, 28) 0%, rgb(255, 255, 255) 99%);
+    background: rgb(0, 24, 36);
+    background: -moz-linear-gradient(top, rgb(0, 24, 36) 0%, rgb(255, 255, 255) 99%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgb(227, 72, 28) 0%, rgb(255, 255, 255) 99%);
+    background: -webkit-linear-gradient(top, rgb(0, 24, 36) 0%, rgb(255, 255, 255) 99%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgb(227, 72, 28) 0%, rgb(255, 255, 255) 99%);
+    background: linear-gradient(to bottom, rgb(0, 24, 36) 0%, rgb(255, 255, 255) 99%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3481c', endColorstr='#ffffff', GradientType=0);
     /* IE6-9 */
