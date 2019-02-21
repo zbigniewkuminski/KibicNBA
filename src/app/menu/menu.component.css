@@ -33,3 +33,9 @@
     font-family: AppFont;
     font-size: 15px;
 }
+
+.banner {
+    margin-left:auto; 
+    margin-right: auto;
+    display: block
+}

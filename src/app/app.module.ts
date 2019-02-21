@@ -7,7 +7,7 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MenuComponent } from './menu/menu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
-import { MainSiteComponent } from './main-site/main-site.component';
+import { MainContentComponent } from './main-site/main-content.component';
 import { PlayerProfileComponent } from './main-site/players/player-profile/player-profile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PlayersComponent } from './main-site/players/players.component';
@@ -16,14 +16,16 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { TeamsComponent } from './main-site/teams/teams.component';
+import { MainPageComponent } from './main-site/main-page/main-page.component';
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    MainSiteComponent,
+    MainContentComponent,
     PlayerProfileComponent,
     PlayersComponent,
-    TeamsComponent
+    TeamsComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,

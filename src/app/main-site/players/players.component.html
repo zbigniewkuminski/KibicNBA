@@ -1,78 +1,79 @@
 <div class="container">
   <div class="row sticky sticky-title background">
-    <div class="col-md-12 title">
-      ZAWODNICY
-    </div>
+  <div class="col-md-12 title">
+    ZAWODNICY
   </div>
+</div>
 
-  <div class="row sticky sticky-table-options background">
-    <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-3">
-          <mat-form-field>
-            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Szukaj">
-          </mat-form-field>
-        </div>
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-12 title">Opcje tabeli</div>
-            <div class="col-md-12">
-              <mat-checkbox name="name" class="margin-right font" value="name" [checked]="displayedColumnsTrueFalse[0]"
-                (change)="changeDisplayedColumns(0)">Imię</mat-checkbox>
-              <mat-checkbox name="secondName" class="margin-right font" value="secondName"
-                [checked]="displayedColumnsTrueFalse[1]" (change)="changeDisplayedColumns(1)">Drugie imię</mat-checkbox>
-              <mat-checkbox name="surname" class="margin-right font" value="surname"
-                [checked]="displayedColumnsTrueFalse[2]" (change)="changeDisplayedColumns(2)">Nazwisko</mat-checkbox>
-              <mat-checkbox name="jerseyNumber" class="margin-right font" value="jerseyNumber"
-                [checked]="displayedColumnsTrueFalse[3]" (change)="changeDisplayedColumns(3)">Numer koszulki
-              </mat-checkbox>
-              <mat-checkbox name="age" class="margin-right font" value="age" [checked]="displayedColumnsTrueFalse[4]"
-                (change)="changeDisplayedColumns(4)">Wiek</mat-checkbox>
-              <mat-checkbox name="position" class="margin-right font" value="position"
-                [checked]="displayedColumnsTrueFalse[5]" (change)="changeDisplayedColumns(5)">Pozycja</mat-checkbox>
-              <mat-checkbox name="team" class="margin-right font" value="team" [checked]="displayedColumnsTrueFalse[6]"
-                (change)="changeDisplayedColumns(6)">Drużyna</mat-checkbox>
-            </div>
+<div class="row sticky sticky-table-options background">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3">
+        <mat-form-field>
+          <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Szukaj">
+        </mat-form-field>
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          <div class="col-md-12 title">Opcje tabeli</div>
+          <div class="col-md-12">
+            <mat-checkbox name="name" class="margin-right font" value="name" [checked]="displayedColumnsTrueFalse[0]"
+              (change)="changeDisplayedColumns(0)">Imię</mat-checkbox>
+            <mat-checkbox name="secondName" class="margin-right font" value="secondName"
+              [checked]="displayedColumnsTrueFalse[1]" (change)="changeDisplayedColumns(1)">Drugie imię</mat-checkbox>
+            <mat-checkbox name="surname" class="margin-right font" value="surname"
+              [checked]="displayedColumnsTrueFalse[2]" (change)="changeDisplayedColumns(2)">Nazwisko</mat-checkbox>
+            <mat-checkbox name="jerseyNumber" class="margin-right font" value="jerseyNumber"
+              [checked]="displayedColumnsTrueFalse[3]" (change)="changeDisplayedColumns(3)">Numer koszulki
+            </mat-checkbox>
+            <mat-checkbox name="age" class="margin-right font" value="age" [checked]="displayedColumnsTrueFalse[4]"
+              (change)="changeDisplayedColumns(4)">Wiek</mat-checkbox>
+            <mat-checkbox name="position" class="margin-right font" value="position"
+              [checked]="displayedColumnsTrueFalse[5]" (change)="changeDisplayedColumns(5)">Pozycja</mat-checkbox>
+            <mat-checkbox name="team" class="margin-right font" value="team" [checked]="displayedColumnsTrueFalse[6]"
+              (change)="changeDisplayedColumns(6)">Drużyna</mat-checkbox>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-12">
-      <table mat-table name="playersTable" [dataSource]="dataSource" class="mat-elevation-z8 table">
-        <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef>Imię</th>
-          <td matt-cell *matCellDef="let player">{{player.name}}</td>
-        </ng-container>
-        <ng-container matColumnDef="secondName">
-          <th mat-header-cell *matHeaderCellDef>Drugie imię</th>
-          <td matt-cell *matCellDef="let player">{{player.secondName}}</td>
-        </ng-container>
-        <ng-container matColumnDef="surname">
-          <th mat-header-cell *matHeaderCellDef>Nazwisko</th>
-          <td matt-cell *matCellDef="let player">{{player.surname}}</td>
-        </ng-container>
-        <ng-container matColumnDef="jerseyNumber">
-          <th mat-header-cell *matHeaderCellDef>Numer koszulki</th>
-          <td matt-cell *matCellDef="let player">{{player.jerseyNumber}}</td>
-        </ng-container>
-        <ng-container matColumnDef="age">
-          <th mat-header-cell *matHeaderCellDef>Wiek</th>
-          <td matt-cell *matCellDef="let player">{{player.age}}</td>
-        </ng-container>
-        <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef>Pozycja</th>
-          <td matt-cell *matCellDef="let player">{{player.position}}</td>
-        </ng-container>
-        <ng-container matColumnDef="team">
-          <th mat-header-cell *matHeaderCellDef>Drużyna</th>
-          <td matt-cell *matCellDef="let player">{{player.team.city}} {{player.team.name}}</td>
-        </ng-container>
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr class="table-element" mat-row *matRowDef="let row; columns: displayedColumns;" (click)="openPlayerProfileModal(row)"></tr>
-      </table>
-      <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="20" showFirstLastButtons></mat-paginator>
-    </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table mat-table name="playersTable" [dataSource]="dataSource" class="mat-elevation-z8 table">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Imię</th>
+        <td matt-cell *matCellDef="let player">{{player.name}}</td>
+      </ng-container>
+      <ng-container matColumnDef="secondName">
+        <th mat-header-cell *matHeaderCellDef>Drugie imię</th>
+        <td matt-cell *matCellDef="let player">{{player.secondName}}</td>
+      </ng-container>
+      <ng-container matColumnDef="surname">
+        <th mat-header-cell *matHeaderCellDef>Nazwisko</th>
+        <td matt-cell *matCellDef="let player">{{player.surname}}</td>
+      </ng-container>
+      <ng-container matColumnDef="jerseyNumber">
+        <th mat-header-cell *matHeaderCellDef>Numer koszulki</th>
+        <td matt-cell *matCellDef="let player">{{player.jerseyNumber}}</td>
+      </ng-container>
+      <ng-container matColumnDef="age">
+        <th mat-header-cell *matHeaderCellDef>Wiek</th>
+        <td matt-cell *matCellDef="let player">{{player.age}}</td>
+      </ng-container>
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef>Pozycja</th>
+        <td matt-cell *matCellDef="let player">{{player.position}}</td>
+      </ng-container>
+      <ng-container matColumnDef="team">
+        <th mat-header-cell *matHeaderCellDef>Drużyna</th>
+        <td matt-cell *matCellDef="let player">{{player.team.city}} {{player.team.name}}</td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr class="table-element" mat-row *matRowDef="let row; columns: displayedColumns;"
+        (click)="openPlayerProfileModal(row)"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" [pageSize]="20" showFirstLastButtons></mat-paginator>
   </div>
+</div>
 </div>
