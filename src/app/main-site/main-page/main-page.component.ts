@@ -10,6 +10,9 @@ export class MainPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    // return this.http.get('https://localhost:44303/api/Player').subscribe(e => {
+    //   this.test = e;
+    // })
   }
 
 }

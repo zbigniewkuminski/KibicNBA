@@ -17,6 +17,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { TeamsComponent } from './main-site/teams/teams.component';
 import { MainPageComponent } from './main-site/main-page/main-page.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { MainPageComponent } from './main-site/main-page/main-page.component';
     MatCheckboxModule,
     MatTabsModule,
     MatPaginatorModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
