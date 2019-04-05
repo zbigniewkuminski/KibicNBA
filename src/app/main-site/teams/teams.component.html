@@ -9,16 +9,18 @@
       <div class="col-md-12 sub-title">
         ZACHODNIA
       </div>
-      <div class="col-md-12">
-        <img src="../../../../images/team_screen/lebron.png" style="width:100%">
+      <div class="col-md-12 western-conference-image"
+        [@westConferenceTile]="westHoverTile" (mouseover)="changeState('west', 'true')"
+        (mouseleave)="changeState('west', 'false')">
       </div>
     </div>
     <div class="col-md-6">
       <div class="col-md-12 sub-title">
         WSCHODNIA
       </div>
-      <div class="col-md-12">
-        <img src="../../../../images/team_screen/giannis.png" style="width:100%">
+      <div class="col-md-12 eastern-conference-image"
+        [@eastConferenceTile]="eastHoverTile" (mouseover)="changeState('east', 'true')"
+        (mouseleave)="changeState('east', 'false')">
       </div>
     </div>
   </div>
