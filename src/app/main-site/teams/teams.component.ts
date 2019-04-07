@@ -14,7 +14,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('true', style({
         'width':'520px',
         'height':'440px',
-        'position':'absolute',
+        'top':'20px',
+        'left':'0px',
+        'right':'0px'
       })),
       transition('false => true', animate(600)),
       transition('true => false', animate(300))
@@ -22,12 +24,15 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     trigger('eastConferenceTile', [
       state('false', style({
         'width':'480px',
-        'height':'420px'
+        'height':'420px',
+        'right':'0px'
       })),
       state('true', style({
         'width':'520px',
         'height':'440px',
-        'position':'absolute',
+        'top':'20px',
+        'left':'0px',
+        'right':'0px'
       })),
       transition('false => true', animate(600)),
       transition('true => false', animate(300))

@@ -2,3 +2,22 @@
     font-family: 'AppFont';
     src: url('/kibicNBA/fonts/hemi-head-426/hemiheadbdit.ttf')
 }
+
+.container {
+    background-color: white;
+    min-height: 1500px;
+}
+
+.background {
+    background-image: url('../../images/background/background.jpg');
+    /* background-position: 50%;
+    background-repeat: no-repeat; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.app {
+    height: 2000px;
+    width: 100%
+}
