@@ -11,7 +11,7 @@
       </div>
       <div class="col-md-12 western-conference-image"
         [@westConferenceTile]="westHoverTile" (mouseover)="changeState('west', 'true')"
-        (mouseleave)="changeState('west', 'false')">
+        (mouseleave)="changeState('west', 'false')" [routerLink]="['/konferencje','zachodnia']">
       </div>
     </div>
     <div class="col-md-6">
@@ -20,7 +20,7 @@
       </div>
       <div class="col-md-12 eastern-conference-image"
         [@eastConferenceTile]="eastHoverTile" (mouseover)="changeState('east', 'true')"
-        (mouseleave)="changeState('east', 'false')">
+        (mouseleave)="changeState('east', 'false')" [routerLink]="['/konferencje','wschodnia']">
       </div>
     </div>
   </div>

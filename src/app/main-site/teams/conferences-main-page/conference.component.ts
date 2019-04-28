@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-teams',
-  templateUrl: './teams.component.html',
-  styleUrls: ['./teams.component.css'],
+  selector: 'app-conference',
+  templateUrl: './conference.component.html',
+  styleUrls: ['./conference.component.css'],
   animations: [
     trigger('westConferenceTile', [
       state('false', style({
@@ -39,7 +39,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class TeamsComponent implements OnInit {
+export class ConferenceComponent implements OnInit {
   westHoverTile: string = 'false';
   eastHoverTile: string = 'false';
   constructor() { }

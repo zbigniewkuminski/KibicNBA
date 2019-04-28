@@ -16,11 +16,11 @@ img {
 }
 
 .western-conference-image {
-    background-image: url(../../../../images/team_screen/lebron.png);
+    background-image: url(../../../../../images/team_screen/lebron.png);
     background-size: cover
 }
 
 .eastern-conference-image {
-    background-image: url(../../../../images/team_screen/giannis3.png);
+    background-image: url(../../../../../images/team_screen/giannis3.png);
     background-size: cover
 }

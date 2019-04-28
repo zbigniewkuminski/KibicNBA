@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 title">{{conferenceName}}:</div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <mat-form-field>
+        <mat-label>Dywizje</mat-label>
+        <mat-select name="divisions" [ngModel]="selectedDivision">
+          <mat-option *ngFor="let division of divisions" [value]="division">
+            {{division}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="col-md-1">
+      IKONKA ''DALEJ''
+    </div>
+  </div>
+</div>

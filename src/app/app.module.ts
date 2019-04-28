@@ -15,9 +15,12 @@ import { MatTableModule, MatPaginatorModule ,  } from '@angular/material';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
-import { TeamsComponent } from './main-site/teams/teams.component';
 import { MainPageComponent } from './main-site/main-page/main-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ConferenceComponent } from './main-site/teams/conferences-main-page/conference.component';
+import { ConferencePageComponent } from './main-site/teams/conference-page/conference-page.component';
+import { MatSelectModule} from '@angular/material/select';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,8 +28,9 @@ import { HttpClientModule } from '@angular/common/http';
     MainContentComponent,
     PlayerProfileComponent,
     PlayersComponent,
-    TeamsComponent,
-    MainPageComponent
+    ConferenceComponent,
+    MainPageComponent,
+    ConferencePageComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +45,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatTabsModule,
     MatPaginatorModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
