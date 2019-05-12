@@ -25,7 +25,7 @@ export class PlayersComponent implements OnInit {
     division: Division.SouthWest,
     achronim: TeamAchronim.DAL,
     conference: Conference.Western,
-    logo: '../../../../images/team_logo/dal.png'
+    logo: '../../../../images/team_logo/DAL.png'
   },
   {
     name: 'Lakers',
@@ -33,7 +33,7 @@ export class PlayersComponent implements OnInit {
     division: Division.Pacific,
     achronim: TeamAchronim.LAL,
     conference: Conference.Western,
-    logo: '../../../../images/team_logo/lal.png'
+    logo: '../../../../images/team_logo/LAL.png'
   }]
 
   private players: Player[] = [{

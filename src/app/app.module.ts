@@ -17,10 +17,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MainPageComponent } from './main-site/main-page/main-page.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ConferenceComponent } from './main-site/teams/conferences-main-page/conference.component';
-import { ConferencePageComponent } from './main-site/teams/conference-page/conference-page.component';
 import { MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { TeamsPageComponent } from './main-site/teams/teams-page/teams.page.component';
+import { ServiceShared } from './shared/service.shared';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,9 +28,8 @@ import { FormsModule } from '@angular/forms';
     MainContentComponent,
     PlayerProfileComponent,
     PlayersComponent,
-    ConferenceComponent,
     MainPageComponent,
-    ConferencePageComponent
+    TeamsPageComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +48,7 @@ import { FormsModule } from '@angular/forms';
     MatSelectModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ServiceShared],
   bootstrap: [AppComponent],
   entryComponents:[PlayerProfileComponent]
 })

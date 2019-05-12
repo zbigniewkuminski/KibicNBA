@@ -1,0 +1,33 @@
+.title {
+    font-family: AppFont;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-family: AppFont;
+    font-size: 18px;
+    text-align: center;
+}
+
+.division {
+    font-family: AppFont;
+    font-size: 14px;
+    text-align: center;
+}
+
+.team-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.team-western-name :hover{
+    color: rgb(197, 0, 0);
+    cursor: pointer;
+}
+
+.team-eastern-name :hover{
+    color: rgb(0, 3, 207);
+    cursor: pointer;
+}
