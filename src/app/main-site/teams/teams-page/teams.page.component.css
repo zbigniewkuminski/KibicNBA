@@ -25,9 +25,11 @@
 .team-western-name :hover{
     color: rgb(197, 0, 0);
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .team-eastern-name :hover{
     color: rgb(0, 3, 207);
     cursor: pointer;
+    text-decoration: underline;
 }
