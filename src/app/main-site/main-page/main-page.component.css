@@ -1,3 +1,19 @@
-.text{
-    font-size: 20px;
+.article-title {
+    font-size: 30px;
+}
+
+.article-text{
+    font-size: 18px
+}
+
+.main-page-article {
+    font-family: AppFont;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(235, 235, 235);
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(204,204,204,1);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(204,204,204,1);
+    box-shadow: 10px 10px 5px -5px rgba(204,204,204,1);
 }

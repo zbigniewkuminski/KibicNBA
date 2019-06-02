@@ -23,11 +23,21 @@ export interface Statistics {
     fouls: string;
 }
 
-export class Team {
+export interface Team {
     name: string;
     city: string;
     logo: string;
     achronim: TeamAchronim;
     conference: Conference;
     division: Division;
+}
+
+export interface Article {
+    id: number,
+    author: string,
+    title: string,
+    text: string,
+    creationDate: Date,
+    frontImage: string,
+    grade: number
 }
