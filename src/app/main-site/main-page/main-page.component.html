@@ -4,11 +4,11 @@
       <img src="../../../../images/menu/main.jpg" style="width: 100%">
     </div>
     <div class="col-md-6">
-      <div class="col-md-12 article-title">
-        {{article.title}}
+      <div class="col-md-12 article-title red-underline">
+       <strong>{{article.title}}</strong> 
       </div>
       <div class="col-md-12 article-text">
-        {{article.text}}
+        {{(article.text.length > 200) ? (article.text | slice:0:200)+'...':(article.text)}}
       </div>
     </div>
     <div class="col-md-2">
@@ -19,7 +19,8 @@
         Data utworzenia: {{article.creationDate | date: 'dd/MM/yyyy'}}
       </div>
       <div class="col-md-12">
-        
+        <!-- <bar-rating name="rating" [(ngModel)]="article.grade" [max]="5" required disabled></bar-rating> -->
+        <bar-rating [(rate)]="article.grade" [max]="5"></bar-rating>
       </div>
     </div>
   </div>

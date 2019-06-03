@@ -21,6 +21,7 @@ import { MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { TeamsPageComponent } from './main-site/teams/teams-page/teams.page.component';
 import { ServiceShared } from './shared/service.shared';
+import { BarRatingModule } from "ngx-bar-rating";
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +47,8 @@ import { ServiceShared } from './shared/service.shared';
     MatDialogModule,
     HttpClientModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    BarRatingModule
   ],
   providers: [ServiceShared],
   bootstrap: [AppComponent],
